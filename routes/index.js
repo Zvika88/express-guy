@@ -11,5 +11,8 @@ router.get('/name', function(req, res, next) {
 router.get('/plus', function(req, res, next) {
   res.json( { x: parseInt(req.query.x, 10)+1 });
 });
+router.get('/bye', function(req, res, next) {
+  res.send( 'bye bye');
+});
 
 module.exports = router;
